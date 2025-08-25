@@ -2,8 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'My Next App',
-  description: 'Built with Next.js & Tailwind',
+  title: 'Baisoft Global',
+  description: 'Baisoft Global',
 }
 
 export default function RootLayout({
