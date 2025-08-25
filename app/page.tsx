@@ -1,6 +1,7 @@
 "use client";
 
 import type React from "react";
+import Image from "next/image";
 
 import { useState, useEffect } from "react";
 
@@ -120,7 +121,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-green-400 rounded-full transform rotate-12 scale-110 opacity-20"></div>
               <div className="absolute inset-0 bg-green-300 rounded-full transform -rotate-6 scale-105 opacity-15"></div>
               <div className="relative w-96 h-96 max-md:w-full max-md:h-80 rounded-full overflow-hidden border-4 border-white/20">
-                <img
+                <Image
                   src={heroImages[currentImageIndex] || "/placeholder.svg"}
                   alt="Hero image"
                   className="w-full h-full object-cover transition-opacity duration-500"
@@ -169,7 +170,7 @@ export default function HomePage() {
           {/* Large image on the left */}
           <div className="col-span-1">
             <div className="rounded-2xl overflow-hidden h-full">
-              <img
+              <Image
                 src="/images/big.jpg"
                 alt="Woman at market"
                 className="w-full h-full object-cover"
@@ -192,7 +193,7 @@ export default function HomePage() {
 
             {/* Person image */}
             <div className="rounded-2xl overflow-hidden aspect-square">
-              <img
+              <Image
                 src="/images/122622.jpg"
                 alt="Woman in store"
                 className="w-full h-full object-cover"
@@ -201,7 +202,7 @@ export default function HomePage() {
 
             {/* Another person image */}
             <div className="rounded-2xl overflow-hidden aspect-square">
-              <img
+              <Image
                 src="/images/118355.jpg"
                 alt="Man in grocery store"
                 className="w-full h-full object-cover"
@@ -232,7 +233,7 @@ export default function HomePage() {
               Interested to know more ?
             </h2>
             <p className="text-gray-600 mb-0">
-              Share your email address and you'll be the first to know
+             {`Share your email address and you'll be the first to know`}
             </p>
           </div>
 
@@ -283,33 +284,33 @@ export default function HomePage() {
 
           <h3 className="text-lg font-semibold">1. Acceptance of Terms</h3>
           <p>
-            By accessing and using Baisoft Global's services, you accept and agree to be
-            bound by the terms and provision of this agreement.
+            {`By accessing and using Baisoft Global's services, you accept and agree to be
+            bound by the terms and provision of this agreement.`}
           </p>
 
           <h3 className="text-lg font-semibold">2. Use License</h3>
           <p>
-            Permission is granted to temporarily download one copy of Baisoft Global's
+           {` Permission is granted to temporarily download one copy of Baisoft Global's
             materials for personal, non-commercial transitory viewing only. This
-            is the grant of a license, not a transfer of title.
+            is the grant of a license, not a transfer of title.`}
           </p>
 
           <h3 className="text-lg font-semibold">3. Disclaimer</h3>
           <p>
-            The materials on Baisoft Global's website are provided on an 'as is' basis.
+           {` The materials on Baisoft Global's website are provided on an 'as is' basis.
             Baisoft Global makes no warranties, expressed or implied, and hereby
             disclaims and negates all other warranties including without
             limitation, implied warranties or conditions of merchantability,
             fitness for a particular purpose, or non-infringement of
-            intellectual property or other violation of rights.
+            intellectual property or other violation of rights.`}
           </p>
 
           <h3 className="text-lg font-semibold">4. Limitations</h3>
           <p>
-            In no event shall Baisoft Global or its suppliers be liable for any damages
+           {` In no event shall Baisoft Global or its suppliers be liable for any damages
             (including, without limitation, damages for loss of data or profit,
             or due to business interruption) arising out of the use or inability
-            to use the materials on Baisoft Global's website.
+            to use the materials on Baisoft Global's website.`}
           </p>
 
           <h3 className="text-lg font-semibold">5. Payment Terms</h3>
@@ -390,7 +391,7 @@ export default function HomePage() {
           <p>
             We may update this privacy policy from time to time. We will notify
             you of any changes by posting the new policy on this page and
-            updating the "Last updated" date.
+            updating the Last updated date.
           </p>
 
           <h3 className="text-lg font-semibold">8. Contact Us</h3>
