@@ -188,7 +188,7 @@ export default function HomePage() {
           {/* Right side grid of 4 squares */}
           <div className="grid grid-cols-2 gap-4">
             {/* For Consumers card */}
-            <div className="bg-green-400 rounded-2xl max-lg:p-4 p-6 text-white relative overflow-hidden aspect-square">
+            <div className="bg-[#098f56] rounded-2xl max-lg:p-4 p-6 text-white relative overflow-hidden aspect-square">
               <div className="absolute top-4 right-4 text-white/30 text-6xl max-lg:text-3xl">
                 ↗
               </div>
