@@ -227,7 +227,7 @@ export default function HomePage() {
               </div>
               <div className="mt-8 max-lg:mt-1">
                 <h3 className="text-xl font-bold mb-2 max-lg:leading-tight">For Business Owners</h3>
-                <p className="text-orange-100">
+                <p className="">
                   Streamlining processes for business growth and success.
                 </p>
               </div>
