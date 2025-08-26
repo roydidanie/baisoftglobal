@@ -20,7 +20,7 @@ export default function HomePage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [heroImages.length]);
 
@@ -69,16 +69,16 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="bg-slate-900 h-dvh relative overflow-hidden">
         {/* Navigation */}
-        <nav className="flex items-center justify-between py-6 px-24 max-md:px-4">
+        <nav className="flex items-center justify-between py-6 px-24 max-lg:px-4">
           <div className="flex items-center">
             <div>
               <img src="/baisoft-logo.png" alt="Baisoft Global Logo" className="w-10 h-10 mr-3" />
             </div>
-            <div className="text-2xl max-md:text-xl font-bold text-white">
+            <div className="text-2xl max-lg:text-xl font-bold text-white">
               <span className="">Baisoft Global</span>
             </div>
           </div>
-          <div className="flex items-center space-x-8 max-md:space-x-4">
+          <div className="flex items-center space-x-8 max-lg:space-x-4">
             <a
               href="#"
               className="text-white hover:text-green-400 transition-colors"
@@ -95,16 +95,16 @@ export default function HomePage() {
         </nav>
 
         {/* Hero Content */}
-        <div className="flex items-center max-md:items-start max-md:gap-10 justify-between px-24 max-md:px-4 max-md:flex-col mt-20 max-md:mt-8 max-md:w-full">
-          <div className="flex-1 max-md:flex-none max-md:w-full">
-            <h1 className="text-7xl font-bold text-white leading-tight max-md:text-left max-md:text-5xl max-md:w-full">
+        <div className="flex items-center max-lg:items-start max-lg:gap-10 justify-between px-24 max-lg:px-4 max-lg:flex-col mt-20 max-lg:mt-8 max-lg:w-full">
+          <div className="flex-1 max-lg:flex-none max-lg:w-full max-lg:mb-16 max-md:mb-5">
+            <h1 className="text-7xl font-bold text-white leading-tight max-lg:text-left max-lg:text-5xl max-lg:w-full">
               Scalable <br /> and secure <span className="text-[#2fa7df] italic">Software</span> solutions
               <br />
               
             </h1>
           </div>
 
-          <div className="flex-1 flex max-md:flex-none justify-center relative">
+          <div className="flex-1 flex max-lg:flex-none justify-center relative max-lg:mx-auto max-lg:w-full">
             {/* Decorative elements */}
             <div className="absolute top-10 right-20 w-8 h-8 border-2 border-green-400 rounded opacity-60"></div>
             <div className="absolute top-32 right-10 w-4 h-4 bg-green-400 rounded-full opacity-60"></div>
@@ -123,7 +123,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="absolute inset-0 bg-green-400 rounded-full transform rotate-12 scale-110 opacity-20"></div>
               <div className="absolute inset-0 bg-green-300 rounded-full transform -rotate-6 scale-105 opacity-15"></div>
-              <div className="relative w-96 h-96 max-md:w-full max-md:h-80 rounded-full overflow-hidden border-4 border-white/20">
+              <div className="relative w-96 h-96 max-lg:w-full max-lg:h-80 rounded-full overflow-hidden border-4 border-white/20">
                 <Image
                   src={heroImages[currentImageIndex] || "/placeholder.svg"}
                   alt="Hero image"
@@ -150,23 +150,23 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 max-md:bottom-4 left-1/2 transform -translate-x-1/2 text-center">
+        <div className="absolute bottom-8 max-lg:bottom-4 left-1/2 transform -translate-x-1/2 text-center">
           <button
             onClick={() => scrollToSection("about")}
             className="text-white hover:text-green-400 transition-colors"
           >
-            <div className="text-lg mb-2 max-md:mb-1  max-md:text-base">Know More</div>
+            <div className="text-lg mb-2 max-lg:mb-1  max-lg:text-base">Know More</div>
             <div className="text-[#2fa7df] text-2xl">▼</div>
           </button>
         </div>
       </section>
 
-      <section id="about" className="py-20 px-24 max-md:px-4  bg-gray-50">
+      <section id="about" className="py-20 px-24 max-lg:px-4  bg-gray-50">
         <div className="mb-8">
           <div className="text-[#2fa7df] text-sm font-semibold tracking-wider mb-4">
             ABOUT
           </div>
-          <h2 className="text-4xl max-md:text-3xl font-semibold text-gray-900 leading-tight">
+          <h2 className="text-4xl max-lg:text-3xl font-semibold text-gray-900 leading-tight">
             Building the next generation Software solutions
           </h2>
         </div>
@@ -188,12 +188,12 @@ export default function HomePage() {
           {/* Right side grid of 4 squares */}
           <div className="grid grid-cols-2 gap-4">
             {/* For Consumers card */}
-            <div className="bg-green-400 rounded-2xl max-md:p-4 p-6 text-white relative overflow-hidden aspect-square">
-              <div className="absolute top-4 right-4 text-white/30 text-6xl max-md:text-3xl">
+            <div className="bg-green-400 rounded-2xl max-lg:p-4 p-6 text-white relative overflow-hidden aspect-square">
+              <div className="absolute top-4 right-4 text-white/30 text-6xl max-lg:text-3xl">
                 ↗
               </div>
-              <div className="mt-8 max-md:mt-1">
-                <h3 className="text-xl font-bold mb-2 max-md:leading-tight">For Consumers</h3>
+              <div className="mt-8 max-lg:mt-1">
+                <h3 className="text-xl font-bold mb-2 max-lg:leading-tight">For Consumers</h3>
                 <p className="text-green-100">We take your worries away.</p>
               </div>
             </div>
@@ -221,12 +221,12 @@ export default function HomePage() {
             </div>
 
             {/* For Merchants card */}
-            <div className="bg-[#0b75ae] rounded-2xl max-md:p-4 p-6 text-white relative overflow-hidden aspect-square">
-              <div className="absolute top-4 right-4 text-white/30 text-4xl max-md:text-3xl">
+            <div className="bg-[#0b75ae] rounded-2xl max-lg:p-4 p-6 text-white relative overflow-hidden aspect-square">
+              <div className="absolute top-4 right-4 text-white/30 text-4xl max-lg:text-3xl">
                 ✓
               </div>
-              <div className="mt-8 max-md:mt-1">
-                <h3 className="text-xl font-bold mb-2 max-md:leading-tight">For Business Owners</h3>
+              <div className="mt-8 max-lg:mt-1">
+                <h3 className="text-xl font-bold mb-2 max-lg:leading-tight">For Business Owners</h3>
                 <p className="text-orange-100">
                   Streamlining processes for business growth and success.
                 </p>
@@ -237,10 +237,10 @@ export default function HomePage() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-12 max-md:px-4 px-24 max-md:py-12 bg-gray-100">
-        <div className="w-full mx-auto text-left flex items-center justify-between max-md:flex-col max-md:gap-6">
+      <section className="py-12 max-lg:px-4 px-24 max-lg:py-12 bg-gray-100">
+        <div className="w-full mx-auto text-left flex items-center justify-between max-lg:flex-col max-lg:gap-6">
           <div>
-            <h2 className="text-3xl  max-md:text-2xl font-bold text-gray-900 mb-2">
+            <h2 className="text-3xl  max-lg:text-2xl font-bold text-gray-900 mb-2">
               Interested to know more ?
             </h2>
             <p className="text-gray-600 mb-0">
@@ -248,11 +248,11 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="flex items-center gap-4 max-md:w-full">
+          <div className="flex items-center gap-4 max-lg:w-full">
             <input
               type="email"
               placeholder="Your Email"
-              className="w-[400px] max-md:w-full px-4 py-3 border border-gray-300 rounded-lg"
+              className="w-[400px] max-lg:w-full px-4 py-3 border border-gray-300 rounded-lg"
             />
             <button className="px-8 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700">
               SUBMIT
@@ -262,9 +262,9 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 py-6 px-24 max-md:px-4">
+      <footer className="bg-slate-900 py-6 px-24 max-lg:px-4">
         <div className="flex flex-col sm:flex-row justify-between items-center text-white text-sm">
-          <div className="max-md:text-center"> Copyright © {new Date().getFullYear()} Baisoft Global. All Rights Reserved.</div>
+          <div className="max-lg:text-center"> Copyright © {new Date().getFullYear()} Baisoft Global. All Rights Reserved.</div>
           <div className="flex items-center space-x-6 mt-4 sm:mt-0">
             <button
               onClick={() => setShowTermsPopup(true)}
