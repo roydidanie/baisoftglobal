@@ -4,6 +4,9 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Baisoft Global',
   description: 'Baisoft Global',
+  icons: {
+    icon: "/favicon.png",
+  },
 }
 
 export default function RootLayout({

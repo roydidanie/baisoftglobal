@@ -71,8 +71,11 @@ export default function HomePage() {
         {/* Navigation */}
         <nav className="flex items-center justify-between py-6 px-24 max-md:px-4">
           <div className="flex items-center">
+            <div>
+              <img src="/baisoft-logo.png" alt="Baisoft Global Logo" className="w-10 h-10 mr-3" />
+            </div>
             <div className="text-2xl max-md:text-xl font-bold text-white">
-              <span className="ml-1">Baisoft Global</span>
+              <span className="">Baisoft Global</span>
             </div>
           </div>
           <div className="flex items-center space-x-8 max-md:space-x-4">
@@ -95,7 +98,7 @@ export default function HomePage() {
         <div className="flex items-center max-md:items-start max-md:gap-10 justify-between px-24 max-md:px-4 max-md:flex-col mt-20 max-md:mt-8 max-md:w-full">
           <div className="flex-1 max-md:flex-none max-md:w-full">
             <h1 className="text-7xl font-bold text-white leading-tight max-md:text-left max-md:text-5xl max-md:w-full">
-              Scalable <br /> and secure <span className="text-green-400">Software</span> solutions
+              Scalable <br /> and secure <span className="text-[#2fa7df] italic">Software</span> solutions
               <br />
               
             </h1>
@@ -124,6 +127,8 @@ export default function HomePage() {
                 <Image
                   src={heroImages[currentImageIndex] || "/placeholder.svg"}
                   alt="Hero image"
+                  width={700}
+                  height={700}
                   className="w-full h-full object-cover transition-opacity duration-500"
                 />
               </div>
@@ -151,14 +156,14 @@ export default function HomePage() {
             className="text-white hover:text-green-400 transition-colors"
           >
             <div className="text-lg mb-2 max-md:mb-1  max-md:text-base">Know More</div>
-            <div className="text-orange-500 text-2xl">▼</div>
+            <div className="text-[#2fa7df] text-2xl">▼</div>
           </button>
         </div>
       </section>
 
       <section id="about" className="py-20 px-24 max-md:px-4  bg-gray-50">
         <div className="mb-8">
-          <div className="text-red-400 text-sm font-semibold tracking-wider mb-4">
+          <div className="text-[#2fa7df] text-sm font-semibold tracking-wider mb-4">
             ABOUT
           </div>
           <h2 className="text-4xl max-md:text-3xl font-semibold text-gray-900 leading-tight">
@@ -172,6 +177,8 @@ export default function HomePage() {
             <div className="rounded-2xl overflow-hidden h-full">
               <Image
                 src="/images/big.jpg"
+                width={700}
+                  height={700}
                 alt="Woman at market"
                 className="w-full h-full object-cover"
               />
@@ -195,6 +202,8 @@ export default function HomePage() {
             <div className="rounded-2xl overflow-hidden aspect-square">
               <Image
                 src="/images/122622.jpg"
+                width={700}
+                  height={700}
                 alt="Woman in store"
                 className="w-full h-full object-cover"
               />
@@ -204,13 +213,15 @@ export default function HomePage() {
             <div className="rounded-2xl overflow-hidden aspect-square">
               <Image
                 src="/images/118355.jpg"
+                width={700}
+                  height={700}
                 alt="Man in grocery store"
                 className="w-full h-full object-cover"
               />
             </div>
 
             {/* For Merchants card */}
-            <div className="bg-orange-400 rounded-2xl max-md:p-4 p-6 text-white relative overflow-hidden aspect-square">
+            <div className="bg-[#0b75ae] rounded-2xl max-md:p-4 p-6 text-white relative overflow-hidden aspect-square">
               <div className="absolute top-4 right-4 text-white/30 text-4xl max-md:text-3xl">
                 ✓
               </div>
@@ -251,7 +262,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 py-6 px-6 lg:px-12">
+      <footer className="bg-slate-900 py-6 px-24 max-md:px-4">
         <div className="flex flex-col sm:flex-row justify-between items-center text-white text-sm">
           <div className="max-md:text-center"> Copyright © {new Date().getFullYear()} Baisoft Global. All Rights Reserved.</div>
           <div className="flex items-center space-x-6 mt-4 sm:mt-0">
