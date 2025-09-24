@@ -11,10 +11,10 @@ export default function HomePage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const heroImages = [
-    "/images/big.jpg",
-    "/images/two.jpg",
-    "/images/118355.jpg",
-    "/images/122622.jpg",
+    "/images/image441.jpg",
+    "/images/images442.jpg",
+    "/images/images443.jpg",
+    "/images/images444.jpg",
   ];
 
   useEffect(() => {
@@ -74,7 +74,7 @@ export default function HomePage() {
         </nav>
 
         {/* Hero Content */}
-        <div className="flex items-center justify-center items-center w-full  max-lg:gap-10 justify-between px-24  mt-32">
+        <div className="flex items-center justify-center items-center w-full  max-lg:gap-10 justify-between px-24  mt-36">
           <div className="flex-1 max-lg:flex-none max-lg:w-full max-lg:mb-16 max-md:mb-5">
             <h1 className="text-6xl font-bold text-white leading-[55px] max-lg:text-left max-lg:text-5xl max-lg:w-full">
               Scalable <br /> and secure <br /> <span className="text-[#2fa7df] italic">Software</span> Solutions
