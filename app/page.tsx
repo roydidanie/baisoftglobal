@@ -8,8 +8,6 @@ import { useState, useEffect } from "react";
 
 export default function HomePage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [showTermsPopup, setShowTermsPopup] = useState(false);
-  const [showPrivacyPopup, setShowPrivacyPopup] = useState(false);
 
   const heroImages = [
     "/images/big.jpg",
@@ -32,38 +30,7 @@ export default function HomePage() {
     }
   };
 
-  const Popup = ({
-    isOpen,
-    onClose,
-    title,
-    children,
-  }: {
-    isOpen: boolean;
-    onClose: () => void;
-    title: string;
-    children: React.ReactNode;
-  }) => {
-    if (!isOpen) return null;
-
-    return (
-      <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
-        <div className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto">
-          <div className="p-6">
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
-              <button
-                onClick={onClose}
-                className="text-gray-500 hover:text-gray-700 text-2xl"
-              >
-                ×
-              </button>
-            </div>
-            <div className="text-gray-700 leading-relaxed">{children}</div>
-          </div>
-        </div>
-      </div>
-    );
-  };
+  
 
   return (
     <div className="min-h-screen">
@@ -73,7 +40,8 @@ export default function HomePage() {
         <nav className=" w-full flex items-center justify-center  py-6 px-24 max-lg:px-4">
           <div className="flex items-center">
             <div>
-              <img src="/baisoft-logo.png" alt="Baisoft Global Logo" className="w-10 h-10 mr-3" />
+              {/* <img src="/baisoft-logo.png" alt="Baisoft Global Logo" className="w-10 h-10 mr-3" /> */}
+              <Image src="/baisoft-logo.png" alt="Baisoft Global Logo" width={44} height={44} className="mr-3" />
             </div>
             <div className="text-2xl max-lg:text-xl font-bold text-white">
               <span className="">Baisoft Global</span>
@@ -168,7 +136,7 @@ export default function HomePage() {
             ABOUT
           </div>
           <h2 className="text-4xl max-lg:text-3xl font-semibold text-gray-900 leading-tight">
-            Creating Tomorrow's Software Solutions, Today
+            Creating Tomorrow&apos;s Software Solutions, Today
           </h2>
         </div>
 
@@ -302,135 +270,9 @@ export default function HomePage() {
         </div>
       </footer>
 
-      <Popup
-        isOpen={showTermsPopup}
-        onClose={() => setShowTermsPopup(false)}
-        title="Terms of Use"
-      >
-        <div className="space-y-4">
-          <p>
-            <strong>Last updated:</strong> August 2025
-          </p>
+      
 
-          <h3 className="text-lg font-semibold">1. Acceptance of Terms</h3>
-          <p>
-            {`By accessing and using Baisoft Global's services, you accept and agree to be
-            bound by the terms and provision of this agreement.`}
-          </p>
-
-          <h3 className="text-lg font-semibold">2. Use License</h3>
-          <p>
-           {` Permission is granted to temporarily download one copy of Baisoft Global's
-            materials for personal, non-commercial transitory viewing only. This
-            is the grant of a license, not a transfer of title.`}
-          </p>
-
-          <h3 className="text-lg font-semibold">3. Disclaimer</h3>
-          <p>
-           {` The materials on Baisoft Global's website are provided on an 'as is' basis.
-            Baisoft Global makes no warranties, expressed or implied, and hereby
-            disclaims and negates all other warranties including without
-            limitation, implied warranties or conditions of merchantability,
-            fitness for a particular purpose, or non-infringement of
-            intellectual property or other violation of rights.`}
-          </p>
-
-          <h3 className="text-lg font-semibold">4. Limitations</h3>
-          <p>
-           {` In no event shall Baisoft Global or its suppliers be liable for any damages
-            (including, without limitation, damages for loss of data or profit,
-            or due to business interruption) arising out of the use or inability
-            to use the materials on Baisoft Global's website.`}
-          </p>
-
-          <h3 className="text-lg font-semibold">5. Payment Terms</h3>
-          <p>
-            All payment processing services are subject to additional terms and
-            conditions. Users agree to comply with all applicable laws and
-            regulations regarding payment processing.
-          </p>
-
-          <h3 className="text-lg font-semibold">6. Contact Information</h3>
-          <p>
-            If you have any questions about these Terms of Use, please contact
-            us at info@baisoftglobal.com
-          </p>
-        </div>
-      </Popup>
-
-      <Popup
-        isOpen={showPrivacyPopup}
-        onClose={() => setShowPrivacyPopup(false)}
-        title="Privacy Policy"
-      >
-        <div className="space-y-4">
-          <p>
-            <strong>Last updated:</strong> August 2025
-          </p>
-
-          <h3 className="text-lg font-semibold">1. Information We Collect</h3>
-          <p>
-            We collect information you provide directly to us, such as when you
-            create an account, use our payment services, or contact us for
-            support. This may include your name, email address, phone number,
-            and payment information.
-          </p>
-
-          <h3 className="text-lg font-semibold">
-            2. How We Use Your Information
-          </h3>
-          <p>
-            We use the information we collect to provide, maintain, and improve
-            our payment processing services, process transactions, send you
-            technical notices and support messages, and communicate with you
-            about products, services, and promotional offers.
-          </p>
-
-          <h3 className="text-lg font-semibold">3. Information Sharing</h3>
-          <p>
-            We do not sell, trade, or otherwise transfer your personal
-            information to third parties without your consent, except as
-            described in this policy. We may share your information with trusted
-            partners who assist us in operating our website and conducting our
-            business.
-          </p>
-
-          <h3 className="text-lg font-semibold">4. Data Security</h3>
-          <p>
-            We implement appropriate security measures to protect your personal
-            information against unauthorized access, alteration, disclosure, or
-            destruction. All payment data is encrypted and processed through
-            secure channels.
-          </p>
-
-          <h3 className="text-lg font-semibold">5. Cookies and Tracking</h3>
-          <p>
-            We use cookies and similar tracking technologies to enhance your
-            experience on our website, analyze usage patterns, and deliver
-            personalized content and advertisements.
-          </p>
-
-          <h3 className="text-lg font-semibold">6. Your Rights</h3>
-          <p>
-            You have the right to access, update, or delete your personal
-            information. You may also opt out of certain communications from us.
-            To exercise these rights, please contact us at privacy@Baisoft Global.com
-          </p>
-
-          <h3 className="text-lg font-semibold">7. Changes to This Policy</h3>
-          <p>
-            We may update this privacy policy from time to time. We will notify
-            you of any changes by posting the new policy on this page and
-            updating the Last updated date.
-          </p>
-
-          <h3 className="text-lg font-semibold">8. Contact Us</h3>
-          <p>
-            If you have any questions about this Privacy Policy, please contact
-            us at info@baisoftglobal.com
-          </p>
-        </div>
-      </Popup>
+     
     </div>
   );
 }
