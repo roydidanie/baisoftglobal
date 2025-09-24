@@ -11,10 +11,10 @@ export default function HomePage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const heroImages = [
-    "/images/image441.jpg",
+    "/images/new1.jpg",
     "/images/images442.jpg",
-    "/images/images443.jpg",
-    "/images/images444.jpg",
+    "/images/new2.jpg",
+    "/images/new3.jpg",
   ];
 
   useEffect(() => {
