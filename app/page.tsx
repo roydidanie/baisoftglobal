@@ -38,14 +38,14 @@ export default function HomePage() {
       <section className="bg-slate-900 h-dvh relative overflow-hidden">
         {/* Navigation */}
         <nav className=" w-full flex items-center justify-center  py-6 px-24 max-lg:px-4">
-          <div className="flex items-center">
-            <div className="mt-4">
-              {/* <img src="/baisoft-logo.png" alt="Baisoft Global Logo" className="w-10 h-10 mr-3" /> */}
-              <Image src="/baisoft-logo.png" alt="Baisoft Global Logo" width={230} height={230} className="mr-3" />
+          <div className="flex items-center mt-3">
+            <div className="">
+              <Image src="/Baisoft.png" alt="Baisoft Global Logo"  width={65} height={65} className="mr-3" />
+              {/* <Image src="/baisoft-logo.png" alt="Baisoft Global Logo" width={270} height={270} className="mr-3" /> */}
             </div>
-            {/* <div className="text-2xl max-lg:text-xl font-bold text-white">
+            <div className="text-5xl max-lg:text-xl font-bold text-white">
               <span className="">Baisoft Global</span>
-            </div> */}
+            </div>
           </div>
           {/* <div className="flex items-center space-x-8 max-lg:space-x-4">
             <a
