@@ -39,13 +39,13 @@ export default function HomePage() {
         {/* Navigation */}
         <nav className=" w-full flex items-center justify-center  py-6 px-24 max-lg:px-4">
           <div className="flex items-center">
-            <div>
+            <div className="mt-4">
               {/* <img src="/baisoft-logo.png" alt="Baisoft Global Logo" className="w-10 h-10 mr-3" /> */}
-              <Image src="/baisoft-logo.png" alt="Baisoft Global Logo" width={44} height={44} className="mr-3" />
+              <Image src="/baisoft-logo.png" alt="Baisoft Global Logo" width={160} height={160} className="mr-3" />
             </div>
-            <div className="text-2xl max-lg:text-xl font-bold text-white">
+            {/* <div className="text-2xl max-lg:text-xl font-bold text-white">
               <span className="">Baisoft Global</span>
-            </div>
+            </div> */}
           </div>
           {/* <div className="flex items-center space-x-8 max-lg:space-x-4">
             <a
@@ -161,7 +161,7 @@ export default function HomePage() {
               </div> */}
               <div className="">
                 {/* <h3 className="text-xl font-bold mb-2 max-lg:leading-tight">For Consumers</h3> */}
-                <p className="text-[clamp(0.5rem,1.5vw,2rem)]">Transforming businesses with smart, industry-specific, and Ai-powered software solution that are designed to streamline operations, enhance productivity, and drive measurable growth.</p>
+                <p className="text-[clamp(0.72rem,1.5vw,2rem)]">Transforming businesses with smart, industry-specific, and Ai-powered software solution that are designed to streamline operations, enhance productivity, and drive measurable growth.</p>
               </div>
             </div>
 
@@ -194,7 +194,7 @@ export default function HomePage() {
               </div> */}
               <div className="">
                 {/* <h3 className="text-xl font-bold mb-2 max-lg:leading-tight">For Business Owners</h3> */}
-                <p className="text-[clamp(0.5rem,1.5vw,2rem)]">
+                <p className="text-[clamp(0.72rem,1.5vw,2rem)]">
                   We deliver dependable software foundations for industries that never stop moving - from HR to Retail, Accounting to Education, Property Management to Hospitality, and beyond.
                 </p>
               </div>
