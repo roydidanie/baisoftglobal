@@ -4,6 +4,7 @@ import type React from "react";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 
+
 import { useState, useEffect } from "react";
 
 export default function HomePage() {
@@ -35,15 +36,24 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-slate-900 h-dvh relative overflow-hidden">
+      <section className="relative h-screen flex justify-center overflow-hidden">
+         <Image
+        src="/background.jpg"
+        alt="Hero Background"
+        fill
+        className="object-cover -z-20"
+        priority
+      />
+       <div className="absolute inset-0 bg-black  opacity-30 -z-10"></div>
         {/* Navigation */}
-        <nav className=" w-full flex items-center justify-center  py-6 px-24 max-lg:px-4">
-          <div className="flex items-center mt-3">
+       <div className="flex flex-col w-full">
+         <nav className=" w-full flex items-center justify-center  py-2 px-24 max-lg:px-4 relative z-10">
+          <div className="flex items-center mt-8">
             <div className="">
-              <Image src="/Baisoft.png" alt="Baisoft Global Logo"  width={65} height={65} className="mr-3" />
+              <Image src="/Baisoft.png" alt="Baisoft Global Logo"  width={75} height={75} className="mr-3" />
               {/* <Image src="/baisoft-logo.png" alt="Baisoft Global Logo" width={270} height={270} className="mr-3" /> */}
             </div>
-            <div className="text-5xl max-lg:text-xl font-bold text-white">
+            <div className="text-[60px] max-lg:text-xl font-bold text-white">
               <span className="">Baisoft Global</span>
             </div>
           </div>
@@ -66,7 +76,7 @@ export default function HomePage() {
         {/* Hero Content */}
         <div className="flex items-center justify-center items-center w-full max-lg:items-start max-lg:gap-10 justify-between px-24 max-lg:px-4 max-lg:flex-col mt-20 max-lg:mt-8 max-lg:w-full">
           <div className="flex-1 max-lg:flex-none max-lg:w-full max-lg:mb-16 max-md:mb-5">
-            <h1 className="text-5xl font-bold text-white leading-[55px] max-lg:text-left max-lg:text-5xl max-lg:w-full">
+            <h1 className="text-6xl font-bold text-white leading-[55px] max-lg:text-left max-lg:text-5xl max-lg:w-full">
               Scalable <br /> and secure <br /> <span className="text-[#2fa7df] italic">Software</span> Solutions
             </h1>
           </div>
@@ -77,10 +87,37 @@ export default function HomePage() {
             <div className="absolute top-32 right-10 w-4 h-4 bg-green-400 rounded-full opacity-60"></div>
             <div className="absolute bottom-20 left-10 w-6 h-6 bg-green-400 rounded-full opacity-60"></div> */}
 
+          <div className="absolute z-20 top-10 right-20 p-3 shadow-xl outline-2 outline-gray-400 bg-blue-[#000047] text-white rounded-xl backdrop-blur-sm">
+            <div className="flex items-center gap-2">
+              <Icon icon="hugeicons:flash" width="16" height="16" className="text-blue-600" />
+              <span className="text-sm font-medium">10x Faster</span>
+            </div>
+          </div>
+
+          <div className="absolute top-32 right-10 p-3 shadow-xl outline-2 outline-gray-400 z-20 bg-blue-[#000047] text-white rounded-xl backdrop-blur-sm">
+            <div className="space-y-2">
+              <div className="flex items-center gap-2">
+               <Icon icon="hugeicons:source-code" width="16" height="16" className="text-blue-600" />
+                <span className="text-sm font-medium">Smart Code Gen</span>
+              </div>
+              <div className="flex gap-1">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <div key={i} className="w-1 h-1 bg-blue-600 rounded-full"></div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="absolute bottom-20 left-10 p-3 shadow-xl outline-2 outline-gray-400 z-10 bg-blue-[#000047] text-white rounded-xl backdrop-blur-sm">
+            <div className="flex items-center gap-2">
+              <Icon icon="hugeicons:database" width="16" height="16" className="text-blue-600"/>
+              <span className="text-sm">Auto Deploy</span>
+            </div>
+          </div>
+
             <div className="relative">
-              <div className="absolute inset-0 bg-green-400 rounded-full transform rotate-12 scale-110 opacity-20"></div>
-              <div className="absolute inset-0 bg-green-300 rounded-full transform -rotate-6 scale-105 opacity-15"></div>
-              <div className="relative w-96 h-96 max-lg:w-full max-lg:h-80 rounded-full overflow-hidden border-4 border-white/20">
+              <div className="absolute inset-0 bg-[#28a8df] rounded-2xl transform rotate-12 scale-110 opacity-20"></div>
+              <div className="absolute inset-0 bg-[#28a8df] rounded-2xl transform -rotate-6 scale-105 opacity-15"></div>
+              <div className="relative w-96 h-[400px] max-lg:w-full max-lg:h-80 rounded-2xl overflow-hidden border-4 border-white/20">
                 <Image
                   src={heroImages[currentImageIndex] || "/placeholder.svg"}
                   alt="Hero image"
@@ -106,6 +143,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+       </div>
 
         <div className="absolute bottom-8 max-lg:bottom-4 left-1/2 transform -translate-x-1/2 text-center">
           <button
