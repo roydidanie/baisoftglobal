@@ -41,7 +41,7 @@ export default function HomePage() {
           <div className="flex items-center">
             <div className="mt-4">
               {/* <img src="/baisoft-logo.png" alt="Baisoft Global Logo" className="w-10 h-10 mr-3" /> */}
-              <Image src="/baisoft-logo.png" alt="Baisoft Global Logo" width={160} height={160} className="mr-3" />
+              <Image src="/baisoft-logo.png" alt="Baisoft Global Logo" width={190} height={190} className="mr-3" />
             </div>
             {/* <div className="text-2xl max-lg:text-xl font-bold text-white">
               <span className="">Baisoft Global</span>
@@ -64,7 +64,7 @@ export default function HomePage() {
         </nav>
 
         {/* Hero Content */}
-        <div className="flex items-center max-lg:items-start max-lg:gap-10 justify-between px-24 max-lg:px-4 max-lg:flex-col mt-20 max-lg:mt-8 max-lg:w-full">
+        <div className="flex items-center justify-center items-center w-full max-lg:items-start max-lg:gap-10 justify-between px-24 max-lg:px-4 max-lg:flex-col mt-20 max-lg:mt-8 max-lg:w-full">
           <div className="flex-1 max-lg:flex-none max-lg:w-full max-lg:mb-16 max-md:mb-5">
             <h1 className="text-5xl font-bold text-white leading-[55px] max-lg:text-left max-lg:text-5xl max-lg:w-full">
               Scalable <br /> and secure <br /> <span className="text-[#2fa7df] italic">Software</span> Solutions
@@ -134,7 +134,7 @@ export default function HomePage() {
             ABOUT
           </div>
           <h2 className="text-4xl max-lg:text-3xl font-semibold text-gray-900 leading-tight">
-            Creating Tomorrow&apos;s Software Solutions, Today
+            {`Creating Tomorrow's Software Solutions, Today`}
           </h2>
         </div>
 
