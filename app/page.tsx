@@ -41,7 +41,7 @@ export default function HomePage() {
           <div className="flex items-center">
             <div className="mt-4">
               {/* <img src="/baisoft-logo.png" alt="Baisoft Global Logo" className="w-10 h-10 mr-3" /> */}
-              <Image src="/baisoft-logo.png" alt="Baisoft Global Logo" width={190} height={190} className="mr-3" />
+              <Image src="/baisoft-logo.png" alt="Baisoft Global Logo" width={230} height={230} className="mr-3" />
             </div>
             {/* <div className="text-2xl max-lg:text-xl font-bold text-white">
               <span className="">Baisoft Global</span>
