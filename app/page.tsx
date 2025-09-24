@@ -73,19 +73,9 @@ export default function HomePage() {
 
           <div className="flex-1 flex max-lg:flex-none justify-center relative max-lg:mx-auto max-lg:w-full">
             {/* Decorative elements */}
-            <div className="absolute top-10 right-20 w-8 h-8 border-2 border-green-400 rounded opacity-60"></div>
+            {/* <div className="absolute top-10 right-20 w-8 h-8 border-2 border-green-400 rounded opacity-60"></div>
             <div className="absolute top-32 right-10 w-4 h-4 bg-green-400 rounded-full opacity-60"></div>
-            <div className="absolute bottom-20 left-10 w-6 h-6 bg-green-400 rounded-full opacity-60"></div>
-
-            {/* Thumbs up icon */}
-            <div className="absolute top-16 right-32 text-green-400 text-2xl opacity-60">
-              👍
-            </div>
-
-            {/* Paper plane icon */}
-            <div className="absolute bottom-32 left-20 text-green-400 text-xl opacity-60">
-              ✈️
-            </div>
+            <div className="absolute bottom-20 left-10 w-6 h-6 bg-green-400 rounded-full opacity-60"></div> */}
 
             <div className="relative">
               <div className="absolute inset-0 bg-green-400 rounded-full transform rotate-12 scale-110 opacity-20"></div>
@@ -134,7 +124,7 @@ export default function HomePage() {
             ABOUT
           </div>
           <h2 className="text-4xl max-lg:text-3xl font-semibold text-gray-900 leading-tight">
-            {`Creating Tomorrow's Software Solutions, Today`}
+            {`Creating Tomorrow's Software Solutions, Today!`}
           </h2>
         </div>
 
