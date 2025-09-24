@@ -36,7 +36,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen flex justify-center overflow-hidden">
+      <section className="relative h-screen flex  overflow-hidden">
          <Image
         src="/Background.jpg"
         alt="Hero Background"
@@ -74,7 +74,7 @@ export default function HomePage() {
         </nav>
 
         {/* Hero Content */}
-        <div className="flex items-center justify-center items-center w-full max-lg:items-start max-lg:gap-10 justify-between px-24 max-lg:px-4 max-lg:flex-col mt-20 max-lg:mt-8 max-lg:w-full">
+        <div className="flex items-center justify-center items-center w-full  max-lg:gap-10 justify-between px-24  mt-32">
           <div className="flex-1 max-lg:flex-none max-lg:w-full max-lg:mb-16 max-md:mb-5">
             <h1 className="text-6xl font-bold text-white leading-[55px] max-lg:text-left max-lg:text-5xl max-lg:w-full">
               Scalable <br /> and secure <br /> <span className="text-[#2fa7df] italic">Software</span> Solutions
