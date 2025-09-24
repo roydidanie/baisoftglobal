@@ -38,7 +38,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative h-screen flex justify-center overflow-hidden">
          <Image
-        src="/background.jpg"
+        src="/Background.jpg"
         alt="Hero Background"
         fill
         className="object-cover -z-20"
