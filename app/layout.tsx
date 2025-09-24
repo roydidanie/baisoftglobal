@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   },
 }
 
+import { Outfit } from "next/font/google";
+
+const outfit = Outfit({ subsets: ["latin"] });
+
 export default function RootLayout({
   children,
 }: {
@@ -16,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white text-gray-900">{children}</body>
+      <body className={`${outfit.className} bg-white text-gray-900`}>{children}</body>
     </html>
   )
 }

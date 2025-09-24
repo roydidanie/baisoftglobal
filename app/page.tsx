@@ -2,6 +2,7 @@
 
 import type React from "react";
 import Image from "next/image";
+import { Icon } from "@iconify/react";
 
 import { useState, useEffect } from "react";
 
@@ -69,7 +70,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="bg-slate-900 h-dvh relative overflow-hidden">
         {/* Navigation */}
-        <nav className="flex items-center justify-between py-6 px-24 max-lg:px-4">
+        <nav className=" w-full flex items-center justify-center  py-6 px-24 max-lg:px-4">
           <div className="flex items-center">
             <div>
               <img src="/baisoft-logo.png" alt="Baisoft Global Logo" className="w-10 h-10 mr-3" />
@@ -78,7 +79,7 @@ export default function HomePage() {
               <span className="">Baisoft Global</span>
             </div>
           </div>
-          <div className="flex items-center space-x-8 max-lg:space-x-4">
+          {/* <div className="flex items-center space-x-8 max-lg:space-x-4">
             <a
               href="#"
               className="text-white hover:text-green-400 transition-colors"
@@ -91,13 +92,13 @@ export default function HomePage() {
             >
               About Us
             </button>
-          </div>
+          </div> */}
         </nav>
 
         {/* Hero Content */}
         <div className="flex items-center max-lg:items-start max-lg:gap-10 justify-between px-24 max-lg:px-4 max-lg:flex-col mt-20 max-lg:mt-8 max-lg:w-full">
           <div className="flex-1 max-lg:flex-none max-lg:w-full max-lg:mb-16 max-md:mb-5">
-            <h1 className="text-7xl font-bold text-white leading-tight max-lg:text-left max-lg:text-5xl max-lg:w-full">
+            <h1 className="text-5xl font-bold text-white leading-[50px] max-lg:text-left max-lg:text-5xl max-lg:w-full">
               Scalable <br /> and secure <span className="text-[#2fa7df] italic">Software</span> solutions
               <br />
               
@@ -167,7 +168,7 @@ export default function HomePage() {
             ABOUT
           </div>
           <h2 className="text-4xl max-lg:text-3xl font-semibold text-gray-900 leading-tight">
-            Building the next generation Software solutions
+            Creating Tomorrow's Software Solutions, Today
           </h2>
         </div>
 
@@ -188,13 +189,13 @@ export default function HomePage() {
           {/* Right side grid of 4 squares */}
           <div className="grid grid-cols-2 gap-4">
             {/* For Consumers card */}
-            <div className="bg-[#098f56] rounded-2xl max-lg:p-4 p-6 text-white relative overflow-hidden aspect-square">
-              <div className="absolute top-4 right-4 text-white/30 text-6xl max-lg:text-3xl">
+            <div className="bg-[#A13AE5] rounded-2xl max-lg:p-4 p-4 text-white relative overflow-hidden aspect-square">
+              {/* <div className="absolute top-4 right-4 text-white/30 text-6xl max-lg:text-3xl">
                 ↗
-              </div>
-              <div className="mt-8 max-lg:mt-1">
-                <h3 className="text-xl font-bold mb-2 max-lg:leading-tight">For Consumers</h3>
-                <p className="text-green-100">We take your worries away.</p>
+              </div> */}
+              <div className="">
+                {/* <h3 className="text-xl font-bold mb-2 max-lg:leading-tight">For Consumers</h3> */}
+                <p className="text-lg">Transforming businesses with smart, industry-specific, and Ai-powered software solution that are designed to streamline operations, enhance productivity, and drive measurable growth.</p>
               </div>
             </div>
 
@@ -221,14 +222,14 @@ export default function HomePage() {
             </div>
 
             {/* For Merchants card */}
-            <div className="bg-[#0b75ae] rounded-2xl max-lg:p-4 p-6 text-white relative overflow-hidden aspect-square">
-              <div className="absolute top-4 right-4 text-white/30 text-4xl max-lg:text-3xl">
+            <div className="bg-[#0b75ae] rounded-2xl max-lg:p-4 p-4 text-white relative overflow-hidden aspect-square">
+              {/* <div className="absolute top-4 right-4 text-white/30 text-4xl max-lg:text-3xl">
                 ✓
-              </div>
-              <div className="mt-8 max-lg:mt-1">
-                <h3 className="text-xl font-bold mb-2 max-lg:leading-tight">For Business Owners</h3>
-                <p className="">
-                  Streamlining processes for business growth and success.
+              </div> */}
+              <div className="">
+                {/* <h3 className="text-xl font-bold mb-2 max-lg:leading-tight">For Business Owners</h3> */}
+                <p className="text-lg">
+                  We deliver dependable software foundations for industries that never stop moving - from HR to Retail, Accounting to Education, Property Management to Hospitality, and beyond.
                 </p>
               </div>
             </div>
@@ -263,9 +264,27 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="bg-slate-900 py-6 px-24 max-lg:px-4">
-        <div className="flex flex-col sm:flex-row justify-between items-center text-white text-sm">
-          <div className="max-lg:text-center"> Copyright © {new Date().getFullYear()} Baisoft Global. All Rights Reserved.</div>
-          <div className="flex items-center space-x-6 mt-4 sm:mt-0">
+        <div className="flex flex-col flex-row max-md:flex-col max-md:w-full max-md:items-start max-md:gap-8 justify-between items-end text-white text-sm">
+           <div className="">
+            <p className="font-bold">Contact Us:</p>
+            <div className="flex flex-col space-y-3 mt-3">
+              <div className="flex items-center space-x-2">
+                <Icon icon="hugeicons:mail-01" width="20" height="20" />
+                <p className="font-normal">info@baisoftglobal.com</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Icon icon="hugeicons:call" width="20" height="20" />
+                <p className="font-normal">+256 326120212 </p>
+              </div>
+              <div className="flex items-start space-x-2">
+                <Icon icon="hugeicons:location-01" width="20" height="20" />
+                <p className="font-normal">Plot 58A, Ntinda II RD, Naguru <br />Kampala - Uganda</p>
+              </div>
+            </div>
+          </div>
+          <div className="max-lg:text-center"> Copyright © {new Date().getFullYear()} Baisoft Global LTD. All Rights Reserved.</div>
+         
+          {/* <div className="flex items-center space-x-6 mt-4 sm:mt-0">
             <button
               onClick={() => setShowTermsPopup(true)}
               className="hover:text-green-400 transition-colors"
@@ -279,7 +298,7 @@ export default function HomePage() {
             >
               Privacy Policy
             </button>
-          </div>
+          </div> */}
         </div>
       </footer>
 
